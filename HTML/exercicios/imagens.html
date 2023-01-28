@@ -1,0 +1,132 @@
+<div wm-slider>
+
+    <p>
+        <img src="http://www.petdoctor.com.br/wp-content/uploads/2021/08/EstrabismoEmGatos-Topo-Set21.png"
+            alt="Gato fofo" width="600" height="" title="Gatinho fofo">
+    </p>
+
+    <p>
+        <img src="https://media.tenor.com/ujI068l1JL4AAAAM/sassy-cats.gif" alt="Gatinho cerrando as unhas" width="300"
+            title="Gatinho debochado">
+    </p>
+
+    <p class="circular">
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="Rio de Janeiro" height="342">
+    </p>
+
+    <p class="texto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xVxxvQiJuCfzj40_v3yvEPe59aAZEngNCQ&usqp=CAU"
+            alt="Gato de botas" align="left">
+    </p>
+
+    <p class="cidade"></p>
+
+    <p>
+        <picture>
+            <source
+                srcset="https://blog.123milhas.com/wp-content/uploads/2022/04/BANNER-DESTINOS-GOLFINHOS-BRASIL-123MILHAS.jpg"
+                media="(min-width: 600px)" width="30%">
+            <img src="https://conexaoplaneta.com.br/wp-content/uploads/2021/11/winter-golfinho-conexao-planeta.jpg"
+                alt="Imagem alternativa de golfinho">
+        </picture>
+    </p>
+</div>
+
+
+<style>
+    p {
+        position: absolute;
+        display: none;
+    }
+
+    .circular {
+        width: 513px;
+        background-color: antiquewhite;
+    }
+
+    .texto {
+        width: 500px;
+    }
+
+    .texto img {
+        margin-right: 10px;
+    }
+
+    .cidade {
+        width: 513px;
+        height: 342px;
+        background-image: url('https://blog.123milhas.com/wp-content/uploads/2022/08/conheca-estado-pernambuco-fernando-de-noronha-conexao123-1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+</style>
+
+<!-- <script>
+    const imagens = document.querySelectorAll("p")
+    const qtd = document.querySelectorAll("p").length
+    let i = 0
+
+    function timer() {
+        setInterval(() => {
+            if (i == qtd) {
+                imagens.forEach(ind =>{
+                    ind.style.display = 'none'
+                })
+                i = 0
+                imagens[i].style.display = 'block'
+                i > 0 ? imagens[i - 1].style.display = 'none' : imagens[i].style.display = 'block'
+                i++
+            } else {
+                imagens[i].style.display = 'block'
+                i > 0 ? imagens[i - 1].style.display = 'none' : imagens[i].style.display = 'block'
+                i++
+            }
+        }, 1000)
+    }
+    timer()
+
+</script> -->
+
+<script>
+    function mover(elem, inicio, fim, passa, callback) {
+        const novoInicio = inicio - passa
+        if (novoInicio >= fim) {
+            elem.style.left = novoInicio + 'px'
+            setTimeout(() => mover(elem, novoInicio, fim, passa, callback), 7)
+        } else {
+            callback()
+        }
+    }
+
+    // const p = document.querySelector('[wm-slider] > p')
+    // p.style.display = 'block'
+
+    // mover(p, 800, -600, 5, () => {console.log('Terminou!')})
+
+    function slider() {
+        const elementos = document.querySelectorAll('[wm-slider] > p')
+        const slides = Array.from(elementos)
+        exibirSlide(slides, slides[0])
+    }
+
+    function exibirSlide(slides, slide) {
+        slide.style.display = 'block'
+
+        const inicio = innerWidth
+        const fim = -slide.clientWidth
+
+        slide.style.left = `${inicio}px`
+
+        mover(slide, inicio, fim, 5, () => {
+            slide.style.display = 'none'
+            exibirSlide(slides, getProximo(slides, slide))
+        })
+    }
+
+    function getProximo(lista, atual) {
+        const i = lista.indexOf(atual) + 1
+        return i < lista.length ? lista[i] : lista[0]
+    }
+    slider()
+</script>
