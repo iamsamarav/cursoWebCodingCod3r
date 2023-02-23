@@ -7,7 +7,74 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 3fr;
+        }
+
+        header{
+            background-color: gray;
+            display: flex;
+            grid-row: 1/2;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: solid 0.5rem cyan;
+        }
+
+        .menu-toggle{
+            display: none;
+        }
+
+        nav{
+            width: 25vw;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: space-between;
+        }
+
+        .logo{
+            width: 20rem;
+        }
+
+        .logo img{
+            height: 5rem;
+            margin-left: 1rem;
+        }
+
+        aside{
+            display: flex;
+            width: 15rem;
+            justify-content: space-between;
+            margin-right: 2rem;
+            align-items: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .destaque{
+            background-color: red;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
     </style>
 </head>
 
