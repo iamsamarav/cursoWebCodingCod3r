@@ -147,7 +147,17 @@
     </header>
 
     <script>
-        
+        window.onhashchange = function (e){
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+
+            console.log(oldURL, newURL)
+
+            const oldMenu = document.querySelector(`.menu [href = '#${oldURL}']`)
+            oldMenu.removeAttribute("class", "selected")
+            const newMenu = document.querySelector(`.menu [href = '#${newURL}']`)
+            newMenu.setAttribute("class", "selected")
+        }
     </script>
 </body>
 
