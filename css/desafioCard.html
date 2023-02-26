@@ -5,46 +5,83 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
+        
         *{
             margin: 0;
             padding: 0;
             text-decoration: 0;
+            box-sizing: border-box;
         }
 
-        body >div{
+        .container{
             display: flex;
+            flex-direction: row;
             align-items: center;
+            width: 100vw;
+            height: 100vh;
             justify-content: space-around;
-            height: 40vh;
         }
 
         .curso{
+            width: 18rem;
+            height: 18rem;
             display: flex;
             flex-direction: column;
-            height: 100%;
-            background-color: white;
-            box-shadow: 3px -3px 30px black;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 0.1rem 0.1rem 3rem -1.5rem;
+            border: solid 1px #ccc;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        img{
-
+        .curso img{
+            width: 95%;
         }
+
+        .curso-info{
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            width: 17rem;
+        }
+
+        #profUm{
+            display: none;
+        }        
+
+        .curso-info p{
+            font-size: 1.2rem;
+        }
+
+        .curso-preco{
+            width: 90%;
+            display: flex;
+            justify-content: end;
+        }
+
+        .preco-de{
+            color: red;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            text-decoration: line-through;
+        }
+
+        .preco-por{
+            color: green;
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1>Card</h1>
-
-    <h2>Objetivo</h2>
-    <img src="http://files.cod3r.com.br/curso-web/card.png" height="340" alt="Objetivo">
-
-    <h2>Resultado</h2>
-    <div>
+    <div class="container">
         <div class="curso">
             <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
             <div class="curso-info">
                 <h4>Docker: Ferramenta essencial para Desenvolvedores</h4>
-                <p>Prof. Fulano</p>
+                <p id="profUm">Prof. Fulano</p>
             </div>
             <div class="curso-preco">
                 <span class="preco-de">R$80,00</span>
