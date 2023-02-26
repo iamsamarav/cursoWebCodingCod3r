@@ -2,5 +2,14 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "node-schedule": "^2.1.1"
-  }
+  },
+  "name": "developmentweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
