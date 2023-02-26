@@ -1,15 +1,23 @@
 {
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "node-schedule": "^2.1.1"
-  },
   "name": "developmentweb",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "index.html"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "iamsamarav"
+  },
+  "keywords": [
+    "start"
+  ],
+  "author": "Samara V",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "node-schedule": "^2.1.1",
+    "nodemon": "^2.0.20"
+  }
 }
