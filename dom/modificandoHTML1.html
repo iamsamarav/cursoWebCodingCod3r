@@ -9,7 +9,29 @@
 
 <body class='conteudo exercicio'>
     <script>
-        // ...
+        const body = document.querySelector('body')
+        const divUm = document.createElement('div')
+        divUm.classList.add('destaque')
+        divUm.innerHTML = 'Primeira div'
+
+        const divDois = document.createElement('div')
+        divDois.setAttribute('wm-attribute','valor')
+        divDois.innerHTML = "Segunda div"
+
+        const p = document.createElement('p')
+        p.innerHTML = 'Primeiro parágrafo e terceira div'
+        const divTres = document.createElement('div')
+        divTres.appendChild(p)
+
+        body.appendChild(divUm)
+        body.appendChild(divDois)
+        body.appendChild(divTres)
+
+        const texto = document.createTextNode('Antes...')
+        divTres.insertBefore(texto, divTres.childNodes[0])
+
+        
+
     </script>
 </body>
 
