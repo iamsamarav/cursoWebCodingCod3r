@@ -80,17 +80,38 @@ main{
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barreiras-dois{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    justify-content: end;
 }
 
 .barreiras{
     display: flex;
     flex-direction: column;
     height: 50%;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .corpo{
     background-color: green;
     border: solid 0.2rem black;
+    width: 7rem;
+    height: 40%;
+}
+
+.borda{
+    background-color: green;
     width: 10rem;
+    border: solid 0.2rem black;
     height: 20%;
+    margin: -1rem;
+    z-index: 1;
 }
