@@ -1,117 +1,63 @@
-@font-face {
-    font-family: 'Oswald';
-    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
-}
-
-@font-face{
-    font-family: 'Pixel';
-    src: url('../fonts/Pixel.ttf') format('truetype');
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-body{
-    background-color: lightblue;
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-    grid-template-areas: 'cabecalho'
-    'jogo';
-    width: 100vw;
-    height: 100vh;
-}
-
-header{
-    grid-area: cabecalho;
-    display: flex;
-    border-bottom: solid 0.3rem white;
-    width: 100vw;
-    height: 100%;
-    color: rgb(201, 35, 5);
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Oswald';
+* {
     box-sizing: border-box;
 }
 
-header div{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 12rem;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 2rem;
-}
-
-header span{
+@font-face {
     font-family: 'Pixel';
-    font-size: 3rem;
-    margin-right: 2rem;
-    padding: 1rem;
+    src: url('../fonts/Pixel.ttf');
 }
 
-.flappy-cabecalho{
-    width: 3rem;
-}
-
-main{
-    grid-area: jogo;
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
+[wm-flappy] {
     position: relative;
+    border: 5px solid dodgerblue;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-color: deepskyblue;
+    overflow: hidden;
 }
 
-.passaro{
+.passaro {
     position: absolute;
     width: 60px;
     left: calc(50% - 30px);
-    bottom: 50%;
 }
 
-.par-de-barreiras{
+.par-de-barreiras {
     position: absolute;
     top: 0;
-    width: 10rem;
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.barreiras-dois{
     display: flex;
     flex-direction: column;
-    height: 50%;
-    align-items: center;
-    justify-content: end;
+    justify-content: space-between;
 }
 
-.barreiras{
+.barreira {
     display: flex;
     flex-direction: column;
-    height: 50%;
     align-items: center;
-    justify-content: flex-start;
 }
 
-.corpo{
-    background-color: green;
-    border: solid 0.2rem black;
-    width: 7rem;
-    height: 40%;
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid #000;
 }
 
-.borda{
-    background-color: green;
-    width: 10rem;
-    border: solid 0.2rem black;
-    height: 20%;
-    margin: -1rem;
-    z-index: 1;
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 100;
 }
