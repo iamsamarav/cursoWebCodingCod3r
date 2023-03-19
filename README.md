@@ -42,4 +42,4 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo](# Learning-Development-Web)<br>
+[⬆ Voltar ao topo](#learning-development-web)<br>
