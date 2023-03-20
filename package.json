@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "index.html"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,10 @@
   "author": "Samara V",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
     "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
     "node-schedule": "^2.1.1",
     "nodemon": "^2.0.20"
   }
