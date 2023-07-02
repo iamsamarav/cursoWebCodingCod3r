@@ -44,4 +44,4 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo](#curso-web-coding--cod3r)<br>
+[⬆ Voltar ao topo](#curso-web-coding---cod3r)<br>
