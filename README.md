@@ -1,8 +1,6 @@
-# Learning Development Web
+# Curso Web Coding - Cod3r
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
-
-<img src="" alt="exemplo imagem">
 
 > Este repositório tem o objetivo de aprendizado das tecnologias relacionadas ao Desenvolvimento Web
 
@@ -15,21 +13,25 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Array, Objetos e Funções
 - [x] HTML, CSS e DOM
 - [x] ESnext, Node e Ajax
-- [ ] Gulp
-
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `Node.js`
+- [x] Gulp
+- [ ] JQuery
+- [ ] Webpack
+- [ ] Bootstrap
+- [ ] React
+- [ ] Banco de dados não relacionais
+- [ ] Vue
+- [ ] Banco de dados relacionais
+- [ ] Express
+- [ ] Mongoose
+- [ ] Projetos 
 
 ## 🤝 Colaboradores
 
 <table>
   <tr>
     <td align="center">
-      <a href="#">
-        <img src="https://media.licdn.com/dms/image/D4D03AQFPNXrqXphbrQ/profile-displayphoto-shrink_200_200/0/1669081570828?e=1684368000&v=beta&t=zaSdLyYijQJM1GqY4fcNpXRj85OjXTNllaORI_UI2Bk" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+      <a href="https://www.linkedin.com/in/iamsamarav/">
+        <img src="https://media.licdn.com/dms/image/D4D03AQFPNXrqXphbrQ/profile-displayphoto-shrink_200_200/0/1669081570828?e=1694044800&v=beta&t=V7G2hypBZXemPt4JZgLI5huBf0qpO23tMHNdYSJzQvY" width="100px;" alt="Foto da Samara Vitória no GitHub"/><br>
         <sub>
           <b>Samara Vitória</b>
         </sub>
@@ -42,4 +44,4 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo](#learning-development-web)<br>
+[⬆ Voltar ao topo](#curso-web-coding---cod3r)<br>
