@@ -31,7 +31,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
   <tr>
     <td align="center">
       <a href="#">
-        <img src="[https://media.licdn.com/dms/image/D4D03AQFPNXrqXphbrQ/profile-displayphoto-shrink_200_200/0/1669081570828?e=1684368000&v=beta&t=zaSdLyYijQJM1GqY4fcNpXRj85OjXTNllaORI_UI2Bk](https://media.licdn.com/dms/image/D4D03AQFPNXrqXphbrQ/profile-displayphoto-shrink_200_200/0/1669081570828?e=1694044800&v=beta&t=V7G2hypBZXemPt4JZgLI5huBf0qpO23tMHNdYSJzQvY)" width="100px;" alt="Foto da Samara Vitória no GitHub"/><br>
+        <img src="https://media.licdn.com/dms/image/D4D03AQFPNXrqXphbrQ/profile-displayphoto-shrink_200_200/0/1669081570828?e=1684368000&v=beta&t=zaSdLyYijQJM1GqY4fcNpXRj85OjXTNllaORI_UI2Bk" width="100px;" alt="Foto da Samara Vitória no GitHub"/><br>
         <sub>
           <b>Samara Vitória</b>
         </sub>
