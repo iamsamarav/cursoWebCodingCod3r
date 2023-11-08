@@ -12,7 +12,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] HTML, CSS e DOM
 - [x] ESnext, Node e Ajax
 - [x] Gulp
-- [ ] 
+      
 ## 🤝 Colaboradores
 
 <table>
