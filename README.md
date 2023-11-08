@@ -1,7 +1,5 @@
 # Curso Web Coding - Cod3r
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
-
 > Este repositório tem o objetivo de aprendizado das tecnologias relacionadas ao Desenvolvimento Web
 
 ### Ajustes e melhorias
@@ -14,17 +12,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] HTML, CSS e DOM
 - [x] ESnext, Node e Ajax
 - [x] Gulp
-- [ ] JQuery
-- [ ] Webpack
-- [ ] Bootstrap
-- [ ] React
-- [ ] Banco de dados não relacionais
-- [ ] Vue
-- [ ] Banco de dados relacionais
-- [ ] Express
-- [ ] Mongoose
-- [ ] Projetos 
-
+- [ ] 
 ## 🤝 Colaboradores
 
 <table>
